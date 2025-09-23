@@ -22,7 +22,7 @@ body{
 .home{
     width: 100%;
     height: 100vh;
-    background-image:url(../../../../Downloads/dennis-alvear-perez-H9tTZ3nESbY-unsplash.jpg);
+    background-image:url(../images/dennis-alvear-perez-H9tTZ3nESbY-unsplash.jpg);
     background-size: cover;
     position: relative;
 }
@@ -78,6 +78,7 @@ text-align: center;
     list-style: none;
     margin-right:30px;
     float: right;
+    
 
 }
 .header-ul li{
@@ -85,11 +86,10 @@ text-align: center;
     color: #e8e2e2;
     margin-left: 25px;
     margin-top:20px;
-    padding-bottom: 50px;
 }
 .header-ul li a{
     text-decoration: none;
-    color: #8B0000;
+    color: #ffffff;
 }
 .about-title{
     text-align: center;
@@ -148,13 +148,13 @@ text-align: center;
     margin: 30px 0px 10px 0px ;
 }
 .about-icon1{
-    color: #000000;
+    color: rgb(230, 161, 175);
 }
 .about-icon2{
-    color: green;
+    color:rgb(230, 161, 175);
 }
 .about-icon3{
-    color: rgb(102, 102, 194);
+    color: rgb(230, 161, 175);
 }
 .about-title1 ,.about-title2 ,.about-title3{
     font-size: 40px;
@@ -168,6 +168,7 @@ text-align: center;
   width: 100%;
     margin: auto;
 }
+
 .menu{
     background-color: #e7bdbd;
    margin: auto;
@@ -175,6 +176,7 @@ text-align: center;
     margin-top: 600px;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 
 .menu-img{
@@ -224,6 +226,9 @@ text-align: center;
      background-size: cover;
      float: left; 
      width: 25%;
+}
+.menu-img1:hover,.menu-img2:hover,.menu-img3:hover,.menu-img4:hover,.menu-img5:hover,.menu-img6:hover{
+        background-color: rgba(0, 0, 0,0.6);
 }
 .menu-img4,.menu-img5,.menu-img6{
     margin-top: 40px;
@@ -291,53 +296,26 @@ text-align: center;
 .chefs-item a i{
     line-height: 40px;
 }
-
-.services section{
-    width:70%;
-    margin: auto;
+.card2,.card5{
+    margin: 0 10%;
 }
-.service-card1,.service-card2,.service-card3,.service-card4,.service-card5,.service-card6{
-     float: left;
-    color: #a56666;
-    text-align: center;
-   width: 30%;
-   padding: 18px 14px;
-   border:1px solid #570909;
-   height: 160px;
-   border-radius: 15px;
-    }
-
-/*.service-card1 i{
-   
-    padding-right: 10px;
-    padding-bottom:-20px ;
-    
-    color: #a56666;
-}*/
-.service-title{
-    font-size: 30px;
-    color: #D32F2F;
-}
-.service-parent{
-    margin: auto;
-    width: 70%;
-    
-}
-.service-card2,.service-card5{
-    margin: 0 5%;
-}
-.service-card4,.service-card5,.service-card6{
+.card4,.card5,.card6{
     margin-top: 40px;
-
 }
-.services-title{
-    margin: 50px 0px;
+.card1,.card2 ,.card3{
+   margin-top: 30px; 
+}
+.services-title1{
+    margin-top: 50px ;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 50px;
+    color: #D32F2F;
 }
 .why-choose-us-parent{
     margin-top: 600px;
     width: 600px;
+    position: relative;
 }
 .why-choose-us-title{
     font-size: 50px;
@@ -362,8 +340,22 @@ text-align: center;
     margin-top: -350px;
     background-size: cover;
 }
-form{
-    display: inline-block;
+.why0{
+    width: 80%;
+    margin-left: 1100px;
+}
+.why1{
+   background-color: #E0E0E0;
+    margin-top: 40px;
+  float: left;
+height: 20px;
+width:20px;
+border-radius: 50%;
+border: 1px solid rgb(230, 161, 175);
+ margin-left: 10px;
+}
+.why1:active{
+   background-color: #570909; 
 }
 .achievements-parent{
     background-image: url(../images/nima-naseri-RAUGKcReU8A-unsplash.jpg);
@@ -618,20 +610,32 @@ span{
 }
 .drop-down{
     position: absolute;
-      top: 0;
-    left: 0;
+      top: 50;
+    left:1280;
     bottom: 0;
     right: 0;
-    
-  background-color:rgba(0, 0, 0,0.4);
-  visibility: hidden;
-}
+    visibility: hidden;
 
-.blog{
+}
+.drop-down li{
+    display: block;    
+}
+.header-ul li .blog{
     position: relative;
 }
-.drop-down:hover .blog{
+.blog:hover .drop-down{
     visibility: visible;
+}
+li .drop-down a{
+    text-decoration: none;
+    color: #a57373;
+}
+.drop-down1{
+    background-color: #ebc2c2;
+    width: 150px;
+    height: 160px;
+    padding-top: 10px;
+    border-radius: 20px;
 }
 .about1::after{
  position: absolute;
@@ -678,21 +682,48 @@ span{
     opacity: 0.7;
     transition: 1s;
 }
-.service-card1::after ,.service-card2::after,.service-card3::after,.service-card4::after,.service-card5::after,.service-card6::after{
-position: absolute;
+.services-section{
+    width: 80%;
+    margin: auto;
+}
+.service-parent{
+    position: relative;
+
+}
+.service-card{
+    width: 280px;
+    height: 160px;
+    float: left;
+    border: 1px solid rgb(139, 29, 29);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+.service-card::after{
+ position: absolute;
  content: "";
  width: 100%;
  height: 0;
  top: 0;
  left: 0;
  background-color: #a56666;
+ border-radius :20px; 
 }
-.service-card1:hover::after ,.service-card2:hover::after,.service-card3:hover::after,.service-card4:hover::after,.service-card5:hover::after,.service-card6:hover::after{
-     height: 100%;
+.service-card:hover::after{
+    height: 100%;
     width: 100%;
     opacity: 0.7;
     transition: 1s;
 }
-.service-section{
- position: relative;
+.service-line{
+    border: 1px solid;
+    height: 1px;
+    width: 150px;
+    margin: auto;
 }
+.service-title{
+color: #c46e6e;
+font-size: 25px;
+}
+  
