@@ -78,8 +78,22 @@ text-align: center;
     list-style: none;
     margin-right:30px;
     float: right;
-    
-
+}
+.header-ul li a::after{
+  position: absolute;
+ content: "";
+ width: 50px;
+ height: 0;
+ top: 20;
+ left: 0;
+ background-color: #ffffff;
+ border-radius :20px;
+}
+.header-ul li a:hover::after{
+    height: 5px;
+    width:100%;
+    opacity: 0.7;
+    transition: 1s;
 }
 .header-ul li{
     display: inline-block;
@@ -90,6 +104,7 @@ text-align: center;
 .header-ul li a{
     text-decoration: none;
     color: #ffffff;
+    position: relative;
 }
 .about-title{
     text-align: center;
@@ -200,23 +215,29 @@ text-align: center;
 }
 .menu-img1{
     background-image: url(../images/alex-munsell-auIbTAcSH6E-unsplash.jpg);   
+   
 }
 .menu-img2{
    background-image: url(../images/alex-munsell-Yr4n8O_3UPc-unsplash.jpg);
    margin: 0px 5%;
+   
 }
 .menu-img3{
-    background-image: url(../images/ionela-mat--l2JfHoeg-o-unsplash.jpg); 
+    background-image: url(../images/ionela-mat--l2JfHoeg-o-unsplash.jpg);
+     
 }
 .menu-img4{
     background-image: url(../images/drake-whitney-pWqMo3bhv3A-unsplash.jpg);
+    
 }
 .menu-img5{
     background-image: url(../images/alina-chernysheva-oj2hBf5TOFM-unsplash.jpg);
+     
       margin: 0px 5%;
 }
 .menu-img6{
     background-image: url(../images/chad-montano-eeqbbemH9-c-unsplash.jpg);
+    
 }
 .menu-img1,.menu-img2,.menu-img3,.menu-img4,.menu-img5,.menu-img6{
     width: 260px;
@@ -226,9 +247,17 @@ text-align: center;
      background-size: cover;
      float: left; 
      width: 25%;
+         
 }
-.menu-img1:hover,.menu-img2:hover,.menu-img3:hover,.menu-img4:hover,.menu-img5:hover,.menu-img6:hover{
-        background-color: rgba(0, 0, 0,0.6);
+.menu-overlay{
+   position:absolute; 
+     width: 260px;
+    height: 200px;
+    background-color: rgba(219, 30, 30,0.6);
+    visibility: hidden;
+}
+.menu-img1:hover,.menu-img2:hover,.menu-img3:hover,.menu-img4:hover,.menu-img5:hover,.menu-img6:hover .menu-overlay{
+  visibility: visible;
 }
 .menu-img4,.menu-img5,.menu-img6{
     margin-top: 40px;
@@ -640,7 +669,7 @@ li .drop-down a{
 .about1::after{
  position: absolute;
  content: "";
- width: 100%;
+ width: 0;
  height: 0;
  top: 0;
  left: 0;
@@ -655,7 +684,7 @@ li .drop-down a{
 .about2::after{
  position: absolute;
  content: "";
- width: 100%;
+ width: 0;
  height: 0;
  top: 0;
  left: 0;
@@ -670,7 +699,7 @@ li .drop-down a{
 .about3::after{
  position: absolute;
  content: "";
- width: 100%;
+ width: 0;
  height: 0;
  top: 0;
  left: 0;
