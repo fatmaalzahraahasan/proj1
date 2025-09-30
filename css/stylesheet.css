@@ -204,7 +204,7 @@ text-align: center;
  margin-left: 225px;
 }
 .menu-line{
-    border: 0.5px solid black;
+   border: 0.5px solid rgb(184, 40, 40);
     height: 1px;
     width: 150px;
     margin: auto;
@@ -830,12 +830,14 @@ li .drop-down a{
  top: 0;
  left: 0;
  background-color: #a56666;
+    border-radius: 15px;
 }
 .about1:hover::after{
     height: 100%;
     width: 100%;
     opacity: 0.7;
     transition: 1s;
+    border-radius: 15px;
 }
 .about2::after{
  position: absolute;
@@ -845,12 +847,14 @@ li .drop-down a{
  top: 0;
  left: 0;
  background-color: #a56666;
+    border-radius: 15px;
 }
 .about2:hover::after{
     height: 100%;
     width: 100%;
     opacity: 0.7;
     transition: 1s;
+    border-radius: 15px;
 }
 .about3::after{
  position: absolute;
@@ -860,12 +864,22 @@ li .drop-down a{
  top: 0;
  left: 0;
  background-color: #a56666;
+    border-radius: 15px;
 }
 .about3:hover::after{
     height: 100%;
     width: 100%;
     opacity: 0.7;
     transition: 1s;
+    border-radius: 15px;
+}
+.about-line{
+        border: 0.5px solid rgb(184, 40, 40);
+    height: 1px;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .services-section{
     width: 80%;
@@ -902,10 +916,12 @@ li .drop-down a{
     transition: 1s;
 }
 .service-line{
-    border: 1px solid;
+     border: 0.5px solid rgb(184, 40, 40);
     height: 1px;
     width: 150px;
     margin: auto;
+    margin-top: 20px;
+   
 }
 .service-title{
 color: #c46e6e;
